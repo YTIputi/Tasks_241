@@ -10,4 +10,4 @@
 1. Файл ~/.ssh/config — конфигурация SSH для конкретного пользователя. Файл /etc/ssh/ssh_config — глобальная конфигурация SSH для всех пользователей.
 2. Возможно, имеется в виду файлы ~/.ssh/config и /etc/ssh/ssh_config
 3-4. Открываем ~/.ssh/config, заполняем: Host students_ssh, HostName arzdez.ru, User student, Port 22
-5. Заходим на сервак
+5. ssh students_ssh
