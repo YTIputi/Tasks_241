@@ -31,5 +31,6 @@ fstab хранит список файловых систем, которые а
 <img width="346" alt="Снимок экрана 2024-12-28 в 18 58 54" src="https://github.com/user-attachments/assets/bd95026c-c474-4cc9-be64-cee9445bd431" />
 8-9. Добавляем в fstab последнюю строчку 
 <img width="868" alt="Снимок экрана 2024-12-28 в 19 08 30" src="https://github.com/user-attachments/assets/ba8f2642-f937-4003-a88e-37aabb666db3" />
-10. 
+10. <img width="343" alt="Снимок экрана 2024-12-28 в 19 44 47" src="https://github.com/user-attachments/assets/ca77500d-6226-48ce-ab8b-ea1cd1ad5dab" />
+
 
