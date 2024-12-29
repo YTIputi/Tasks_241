@@ -107,5 +107,5 @@
    write list = @readonlygroup 
    ```
 **Перезапускаем**
-```sudo systemctl restart smbd
-```
+  ```sudo systemctl restart smbd
+  ```
