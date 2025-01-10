@@ -12,59 +12,59 @@
 
 # Домашняя работа
 1. ```
-  #!/bin/bash
-  
-  set -euo pipefail
-  
-  DIR="/home/sb/Desktop/folder"
-  
-  if [ -d "$DIR" ]; then
-      echo "Существует."
-  else
-      mkdir $DIR
-      echo "Создана."
-  fi
-  
-  CURRENT_DATE=$(date)
-  KERNEL_VERSION=$(uname -r)
-  HOSTNAME=$(hostname)
-  HOME_DIR="$(eval echo "~$(whoami)")"
-  HOME_FILES=$(ls -R "$HOME_DIR")
-  
-  FILE1="$DIR/1.txt"
-  if [ -f "$FILE1" ]; then
-      echo "Существует."
-  else
-      echo "Дата: $CURRENT_DATE" > "$FILE1"
-      echo "Файл '$FILE1' создан и заполнен."
-  fi
-  
-  FILE2="$DIR/2.txt"
-  if [ -f "$FILE2" ]; then
-      echo "Существует."
-  else
-      echo "Версия ядра: $KERNEL_VERSION" > "$FILE2"
-      echo "Файл '$FILE2' создан и заполнен."
-  fi
-  
-  FILE3="$DIR/3.txt"
-  if [ -f "$FILE3" ]; then
-      echo "Существует."
-  else
-      echo "Имя компьютера: $HOSTNAME" > "$FILE3"
-      echo "Файл '$FILE3' создан и заполнен."
-  fi
-  
-  FILE4="$DIR/4.txt"
-  if [ -f "$FILE4" ]; then
-      echo "Существует."
-  else
-      {
-      echo "Список файлов в домашнем каталоге:"
-      echo "$HOME_FILES"
-      } > "$FILE4"
-      echo "Файл '$FILE4' создан и заполнен."
-  fi
+    #!/bin/bash
+    
+    set -euo pipefail
+    
+    DIR="/home/sb/Desktop/folder"
+    
+    if [ -d "$DIR" ]; then
+        echo "Существует."
+    else
+        mkdir $DIR
+        echo "Создана."
+    fi
+    
+    CURRENT_DATE=$(date)
+    KERNEL_VERSION=$(uname -r)
+    HOSTNAME=$(hostname)
+    HOME_DIR="$(eval echo "~$(whoami)")"
+    HOME_FILES=$(ls -R "$HOME_DIR")
+    
+    FILE1="$DIR/1.txt"
+    if [ -f "$FILE1" ]; then
+        echo "Существует."
+    else
+        echo "Дата: $CURRENT_DATE" > "$FILE1"
+        echo "Файл '$FILE1' создан и заполнен."
+    fi
+    
+    FILE2="$DIR/2.txt"
+    if [ -f "$FILE2" ]; then
+        echo "Существует."
+    else
+        echo "Версия ядра: $KERNEL_VERSION" > "$FILE2"
+        echo "Файл '$FILE2' создан и заполнен."
+    fi
+    
+    FILE3="$DIR/3.txt"
+    if [ -f "$FILE3" ]; then
+        echo "Существует."
+    else
+        echo "Имя компьютера: $HOSTNAME" > "$FILE3"
+        echo "Файл '$FILE3' создан и заполнен."
+    fi
+    
+    FILE4="$DIR/4.txt"
+    if [ -f "$FILE4" ]; then
+        echo "Существует."
+    else
+        {
+        echo "Список файлов в домашнем каталоге:"
+        echo "$HOME_FILES"
+        } > "$FILE4"
+        echo "Файл '$FILE4' создан и заполнен."
+    fi
   ```
   Запускаем
   ![image](https://github.com/user-attachments/assets/8753354b-9c9d-4cb4-b4bb-b71b7c440ff4)
