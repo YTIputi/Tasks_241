@@ -11,8 +11,7 @@
 7. Дополните ваш скрипт так, что бы он независимо от местоположения всега выполнялся в домашней папке того кто его вызывает.
 
 # Домашняя работа
-1. 
-  ```
+1. ```
   #!/bin/bash
   
   set -euo pipefail
@@ -72,6 +71,73 @@
   ![image](https://github.com/user-attachments/assets/8fcb176e-df55-4102-8768-7837bdb4e88d)
   Запускаем от супер пользователя
   ![image](https://github.com/user-attachments/assets/3d7f135c-04a7-4445-8d2c-0b188d099f86)
+2.```
+  mv script.sh /usr/local/bin/    
+  ```
+  ```
+  sudo chmod +x /usr/local/bin/script.sh
+  ```
+  ```
+  touch /etc/systemd/system/create_files.service
+  ```
+  ```
+  vim /etc/systemd/system/create_files.service
+  ```
+  ```
+  systemctl daemon-reload
+  ```
+  ```
+  systemctl start create_files.service
+  ```
+  ```
+  systemctl status create_files.service
+  ```
+3.```
+  touch /etc/systemd/system/create_files.timer
+  ```
+  ```
+  vim /etc/systemd/system/create_files.timer
+  ```
+  ```
+  systemctl daemon-reload
+  ```
+  ```
+  systemctl enable create_files.timer
+  ```
+  ```
+  systemctl start create_files.timer
+  ```
+  ```
+  systemctl status create_files.timer
+  ```
+4. root
+5.```
+  useradd -m -s /bin/bash scriptuser
+  ```
+  ```
+  sudo passwd scriptuser
+  ```
+6.```
+  vim /etc/systemd/system/create_files.service
+  ```
+  ```
+  systemctl daemon-reload
+  ```
+  ```
+  systemctl restart create_files.service
+  ```
+  ```
+  systemctl restart create_files.timer
+  ```
+7.```
+  HOME_DIR=$(eval echo "~scriptuser")
+  ```
 
 
-2. 
+
+
+
+
+
+
+
