@@ -72,65 +72,65 @@
   Запускаем от супер пользователя
   ![image](https://github.com/user-attachments/assets/3d7f135c-04a7-4445-8d2c-0b188d099f86)
 2. ```
-   mv script.sh /usr/local/bin/    
+       mv script.sh /usr/local/bin/    
    ```
    ```
-   sudo chmod +x /usr/local/bin/script.sh
+       sudo chmod +x /usr/local/bin/script.sh
    ```
    ```
-   touch /etc/systemd/system/create_files.service
+       touch /etc/systemd/system/create_files.service
    ```
    ```
-   vim /etc/systemd/system/create_files.service
+       vim /etc/systemd/system/create_files.service
    ```
    ```
-   systemctl daemon-reload
+       systemctl daemon-reload
    ```
    ```
-   systemctl start create_files.service
+       systemctl start create_files.service
    ```
    ```
-   systemctl status create_files.service
+       systemctl status create_files.service
    ```
 3. ```
-   touch /etc/systemd/system/create_files.timer
+       touch /etc/systemd/system/create_files.timer
    ```
    ```
-   vim /etc/systemd/system/create_files.timer
+       vim /etc/systemd/system/create_files.timer
    ```
    ```
-   systemctl daemon-reload
+       systemctl daemon-reload
    ```
    ```
-   systemctl enable create_files.timer
+       systemctl enable create_files.timer
    ```
    ```
-   systemctl start create_files.timer
+       systemctl start create_files.timer
    ```
    ```
-   systemctl status create_files.timer
+       systemctl status create_files.timer
    ```
 4. root
 5. ```
-   useradd -m -s /bin/bash scriptuser
+       useradd -m -s /bin/bash scriptuser
    ```
    ```
-   sudo passwd scriptuser
+       sudo passwd scriptuser
    ```
 6. ```
-   vim /etc/systemd/system/create_files.service
+       vim /etc/systemd/system/create_files.service
    ```
    ```
-   systemctl daemon-reload
+       systemctl daemon-reload
    ```
    ```
-   systemctl restart create_files.service
+       systemctl restart create_files.service
    ```
    ```
-   systemctl restart create_files.timer
+       systemctl restart create_files.timer
    ```
 7. ```
-   HOME_DIR=$(eval echo "~scriptuser")
+       HOME_DIR=$(eval echo "~scriptuser")
    ```
 
 
