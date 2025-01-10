@@ -92,9 +92,10 @@
    ```
        systemctl status create_files.service
    ```
-3. ```
+3.
+    ```
        touch /etc/systemd/system/create_files.timer
-   ```
+    ```
    ```
        vim /etc/systemd/system/create_files.timer
    ```
