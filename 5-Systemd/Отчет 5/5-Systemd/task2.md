@@ -73,44 +73,27 @@
   ![image](https://github.com/user-attachments/assets/3d7f135c-04a7-4445-8d2c-0b188d099f86)
 2. ```
        mv script.sh /usr/local/bin/    
-   ```
-   ```
        sudo chmod +x /usr/local/bin/script.sh
-   ```
-   ```
        touch /etc/systemd/system/create_files.service
-   ```
-   ```
        vim /etc/systemd/system/create_files.service
-   ```
-   ```
        systemctl daemon-reload
-   ```
-   ```
        systemctl start create_files.service
-   ```
-   ```
        systemctl status create_files.service
    ```
 3.
     ```
        touch /etc/systemd/system/create_files.timer
-    ```
-   ```
+
        vim /etc/systemd/system/create_files.timer
-   ```
-   ```
+
        systemctl daemon-reload
-   ```
-   ```
+
        systemctl enable create_files.timer
-   ```
-   ```
+
        systemctl start create_files.timer
-   ```
-   ```
+
        systemctl status create_files.timer
-   ```
+    ```
 4. root
 5. ```
        useradd -m -s /bin/bash scriptuser
