@@ -82,19 +82,19 @@ systemctl start create_files.service
 systemctl status create_files.service
 ```
 3.
-       ```
-           touch /etc/systemd/system/create_files.timer
-    
-           vim /etc/systemd/system/create_files.timer
-    
-           systemctl daemon-reload
-    
-           systemctl enable create_files.timer
-    
-           systemctl start create_files.timer
-    
-           systemctl status create_files.timer
-        ```
+```
+touch /etc/systemd/system/create_files.timer
+
+vim /etc/systemd/system/create_files.timer
+
+systemctl daemon-reload
+
+systemctl enable create_files.timer
+
+systemctl start create_files.timer
+
+systemctl status create_files.timer
+```
 4. root
 5. ```
        useradd -m -s /bin/bash scriptuser
