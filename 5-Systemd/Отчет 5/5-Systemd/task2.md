@@ -65,7 +65,7 @@
         } > "$FILE4"
         echo "Файл '$FILE4' создан и заполнен."
     fi
-  ```
+      ```
   Запускаем
   ![image](https://github.com/user-attachments/assets/8753354b-9c9d-4cb4-b4bb-b71b7c440ff4)
   ![image](https://github.com/user-attachments/assets/8fcb176e-df55-4102-8768-7837bdb4e88d)
